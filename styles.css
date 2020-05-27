@@ -1,0 +1,108 @@
+@media screen and (min-width: 1200px) {
+    body {
+        width: 950px;
+        margin: auto;
+    }
+}
+
+main {
+    border: 3pt solid black;
+    border-radius: 2%;
+    padding: 3%;
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    background-color: rgba(180, 180, 180, 0.712);
+}
+#screen {
+    border: 1pt solid black;
+    padding: 5%;
+    height: 10%;
+    background-color: white;
+}
+.display {
+    font-size: 24pt;
+    text-align: right;
+}
+#wrapper {
+    display: grid;
+    padding-top: 5%;
+    height: 70%;
+    grid-template-areas: 
+        "clear . . . back"
+        "seven eight nine . divide"
+        "four five six . mult"
+        "one two three . minus"
+        "zero eq eq . plus";
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+#wrapper button {
+    font-size: 18pt;
+}
+#zero {
+    grid-area: zero;
+}
+#one {
+    grid-area: one;
+}
+#two {
+    grid-area: two;
+}
+#three {
+    grid-area: three;
+}
+#four {
+    grid-area: four;
+}
+#five {
+    grid-area: five;
+}
+#six {
+    grid-area: six;
+}
+#seven {
+    grid-area: seven;
+}
+#eight {
+    grid-area: eight;
+}
+#nine {
+    grid-area: nine;
+}
+#eq {
+    grid-area: eq;
+}
+#back {
+    grid-area: back;
+}
+#clear {
+    grid-area: clear;
+}
+#plus {
+    grid-area: plus;
+    font-weight: bold;
+    background-color: orange;
+    color: white;
+}
+#minus {
+    grid-area: minus;
+    font-weight: bold;
+    background-color: orange;
+    color: white;
+}
+#mult {
+    grid-area: mult;
+    font-weight: bold;
+    background-color: orange;
+    color: white;
+}
+#divide {
+    grid-area: divide;
+    font-weight: bold;
+    background-color: orange;
+    color: white;
+}
+button:hover {
+    cursor: pointer;
+}
